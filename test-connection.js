@@ -7,10 +7,10 @@ dotenv.config();
 async function testConnection() {
   try {
     console.log('🔌 Testing MongoDB connection...');
-    console.log('Connection URI:', process.env.MONGODB_URI || 'mongodb://localhost:27017/whatsapp-crm');
+    console.log('Connection URI:', process.env.MONGODB_URI || 'mongodb+srv://Noven:Noven%402516@noven.p4qjkrd.mongodb.net/WhatsAPPCRM');
     
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/whatsapp-crm', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Noven:Noven%402516@noven.p4qjkrd.mongodb.net/WhatsAPPCRM', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
